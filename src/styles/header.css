@@ -1,0 +1,71 @@
+.header > .container {
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0;
+    justify-content: space-between;
+}
+
+.logo__title a {
+    font-family: var(--ff-primary);
+}
+
+.pets-page .logo__title a {
+    color: var(--color-dark-l);
+}
+
+.logo__title {
+    margin-bottom: 10px;
+}
+
+.logo__subtitle {
+    font-size: var(--fs-300);
+    letter-spacing: 0.1em;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__items {
+    display: flex;
+}
+
+.nav-menu__item {
+    margin-right: 35px;
+}
+
+.nav-menu__item a {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-menu__item a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.nav-menu__item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navigation__menu__item:last-child {
+    margin-right: 0;
+}
+
+.header.pets-page .container{
+    padding: 30px 0;
+}
+
+.enabled {
+    pointer-events: all;
+}
