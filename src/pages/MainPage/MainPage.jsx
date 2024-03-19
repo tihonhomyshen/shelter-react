@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/buttons.css'
 import './MainPage.css'
 import aboutPets from '../../assets/images/pets/about-pets.png'
 import leftArrow from '../../assets/images/icons/arrows/left-arrow.png'
@@ -116,28 +117,28 @@ const MainPage = () => {
                     </div>
                 </section>
                 <section className="donation">
-                <div className="container">
-                    <div className="donation__content">
-                        <div className="image-block">
-                            <img src={donationDog} alt=""/>
-                        </div>
-                        <div className="description">
-                            <h2 className="color-dark-l">You can also make a donation</h2>
-                            <h5 className="color-dark-l">Name of the bank / Type of bank account</h5>
-                            <div className="credit-card background-color-primary">
-                                <img className="image" src={creditCard} alt="Credit Card"/>
-                                <p className="credit-card__number fs-subtitle color-dark-l">8380 2880 8028 8791 7435</p>
+                    <div className="container">
+                        <div className="donation__content">
+                            <div className="image-block">
+                                <img src={donationDog} alt="" />
                             </div>
-                            <p className="note-text fs-small color-dark-m">Legal information and lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit.
-                                Maecenas a ipsum at libero sagittis dignissim sed ac diam.
-                                Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum
-                                primis
-                                in faucibus.</p>
+                            <div className="description">
+                                <h2 className="color-dark-l">You can also make a donation</h2>
+                                <h5 className="color-dark-l">Name of the bank / Type of bank account</h5>
+                                <div className="credit-card background-color-primary">
+                                    <img className="image" src={creditCard} alt="Credit Card" />
+                                    <p className="credit-card__number fs-subtitle color-dark-l">8380 2880 8028 8791 7435</p>
+                                </div>
+                                <p className="note-text fs-small color-dark-m">Legal information and lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                    Maecenas a ipsum at libero sagittis dignissim sed ac diam.
+                                    Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum
+                                    primis
+                                    in faucibus.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
             </main>
         </>
     )

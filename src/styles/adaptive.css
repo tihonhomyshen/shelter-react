@@ -1,0 +1,314 @@
+@media screen and (max-width: 1200px) {
+    .start-screen {
+        padding: 0 30px;
+    }
+
+    .about-shelter__content {
+        padding: 0 15vw;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+    .footer .container {
+        column-gap: 100px;
+    }
+
+    .about-shelter .image-block img {
+        width: 250px;
+    }
+
+    .about-shelter .image-block {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .main-page .slider__item:nth-child(3) {
+        display: none;
+    }
+
+    .about-shelter .image-block {
+        margin-right: 60px;
+    }
+
+    .footer .container {
+        column-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .not-only .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .not-only__content {
+        display: flex;
+        margin-right: 0;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .not-only .button {
+        align-self: center;
+    }
+
+    .about-shelter__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .description {
+        max-width: 380px;
+        margin-bottom: 80px;
+    }
+
+    .donation .donation__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .donation__content .image-block {
+        margin-right: 0;
+    }
+
+    .info__detail:nth-child(1) {
+        grid-area: content;
+    }
+
+    .info__detail:nth-child(2) {
+        grid-area: content;
+    }
+
+    .info__image {
+        width: 300px;
+        height: 310px;
+        grid-area: image;
+        justify-self: center;
+    }
+
+    .footer .container {
+        padding: 40px 30px 0 30px;
+        row-gap: 65px;
+        column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "content content"
+            "image image";
+    }
+
+    .help-list {
+        gap: 50px;
+    }
+
+    .donation__content .image-block img {
+        width: 400px;
+    }
+
+    .about-shelter .image-block {
+        margin-right: 30px;
+    }
+
+    .info__detail a img {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header.pets-page .container {
+        padding: 30px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 320px;
+        font-size: var(--fs-mobile-menu);
+        text-align: center;
+        background-color: var(--color-dark-3xl);
+        display: flex;
+        overflow: auto;
+        transition: all .5s;
+    }
+
+    .nav-wrapper {
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .pets-page .nav-menu {
+        background-color: var(--color-light-s);
+    }
+
+    .pets-page .nav-menu a {
+        color: black;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu__items {
+        flex-direction: column;
+        gap: 40px;
+        margin: auto;
+    }
+
+    .header .container .menu-icon {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .main-page .slider__item:nth-child(2) {
+        display: none;
+    }
+
+    .our-friends .container .slider-arrows {
+        display: flex;
+    }
+
+    .slider .left-arrow,
+    .slider .right-arrow {
+        display: none;
+    }
+
+    .main-page .slider__container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .not-only__content {
+        text-align: center;
+    }
+
+    .not-only__content .page-title {
+        font-size: var(--fs-title-adaptive);
+    }
+
+    h2 {
+        font-size: var(--fs-title-adaptive);
+    }
+
+    .footer .container {
+        row-gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "content"
+            "content"
+            "image";
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .credit-card__number {
+        font-size: var(--fs-400);
+    }
+
+    .donation .donation__content {
+        max-width: 300px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donation__content .image-block img {
+        width: 300px;
+    }
+
+    .slider {
+        justify-content: center;
+    }
+
+    .credit-card {
+        font-size: var(--fs-400);
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .help-list {
+        gap: 30px;
+    }
+
+    .help-list__item {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .description h2 {
+        text-align: center;
+    }
+
+    .footer .container .info__image {
+        width: 280px;
+    }
+}
+
+
+/* Burger Icon */
+.menu-icon {
+    /* display: none; */
+    margin-left: auto;
+    visibility: hidden;
+    width: 30px;
+    height: 18px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu-icon span {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 1px);
+    left: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.pets-page .menu-icon span {
+    background-color: black;
+}
+
+.menu-icon span:first-child {
+    top: 0;
+}
+
+.menu-icon span:last-child {
+    top: auto;
+    bottom: 0;
+}
+
+.rotated {
+    transform: rotate(-90deg);
+    transition: transform .5s;
+}
+
+.blackout{ 
+    background: rgba(0, 0, 0, .5);
+    transition: background 0.5s;
+}

@@ -11,7 +11,7 @@
 }
 
 .start-screen {
-    background: url("../../assets/images/background/noise_transparent@2x.png"), linear-gradient(115deg, #515B3A -65.85%, #262425 65.85%),    #211F20;
+    background: url("../../assets/images/background/noise_transparent@2x.png"), linear-gradient(115deg, #515B3A -65.85%, #262425 65.85%), #211F20;
 }
 
 .not-only .container {
@@ -30,7 +30,7 @@
 }
 
 .not-only__content .page-title {
-    white-space: pre-line ;
+    white-space: pre-line;
     font-size: var(--fs-800);
     margin-bottom: 42px;
 }

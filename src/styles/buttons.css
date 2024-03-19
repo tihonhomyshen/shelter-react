@@ -1,0 +1,62 @@
+.button {
+    padding: 15px 45px;
+    border-radius: 100px;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-500);
+    cursor: pointer;
+    transition-duration: 1.5s;
+}
+
+.button:hover {
+    background-color: var(--color-primary-light);
+}
+
+.button_primary {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.button_secondary {
+    background-color: var(--color-light-xl);
+    border: 2px solid var(--color-primary-light);
+}
+
+.slider__item .button {
+    margin-bottom: 30px;
+}
+
+.span-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    font-size: var(--fs-600);
+    font-family: var(--ff-primary);
+    border-radius: 100px;
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+.span-circle:hover, button.active:hover {
+    background-color: var(--color-primary-light);
+}
+
+.credit-card__button img {
+    padding-right: 15px;
+}
+
+.page-number {
+    background-color: var(--color-primary);
+    cursor: auto;
+}
+
+.previous-page {
+    color: var(--color-dark-s);
+    border: 3px solid var(--color-dark-s);
+}
+
+.span-circle, button .active {
+    color: var(--color-3xl);
+    border: 3px solid var(--color-primary);
+}

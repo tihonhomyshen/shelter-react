@@ -1,8 +1,11 @@
 import './styles/App.css'
-import Header from './components/Header'
+import './styles/adaptive.css'
+import {Routes, Route, Link} from 'react-router-dom'
+import {PetsPage} from './pages/PetsPage/PetsPage'
+import Header from './components/Header/Header'
 import MainPage from './pages/MainPage/MainPage'
 import StartScreen from './components/StartScreen'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 
 function App() {
     return (
@@ -13,7 +16,7 @@ function App() {
                     <StartScreen />
                 </div>
                 <MainPage />
-                <Footer/>
+                <Footer />
             </div>
         </>
     )
