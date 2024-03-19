@@ -15,6 +15,9 @@ import transportation from '../../assets/images/icons/help-list/icon-transportat
 import vitamins from '../../assets/images/icons/help-list/icon-vitamins.svg'
 import donationDog from '../../assets/images/pets/donation-dog.png'
 import creditCard from '../../assets/images/icons/donation/icon-credit-card.svg'
+import { useLocation } from "react-router-dom";
+import StartScreen from "../../components/StartScreen";
+
 
 
 
