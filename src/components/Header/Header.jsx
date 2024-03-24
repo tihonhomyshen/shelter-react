@@ -6,14 +6,19 @@ import './Header.css'
 
 const Header = () => {
 
+    const { pathname } = useLocation()
+
+    const isMainPage = pathname === '/'
     return (
         <>
-            <header className="header">
+            <header className={`header ${isMainPage ?  '': 'pets-page'}`}>
                 <div className="container">
-                    <a className="logo" href="/">
-                        <p className="logo__title fs-logo color-primary">Cozy House</p>
-                        <p className="logo__subtitle color-light-xl">Shelter for pets in Boston</p>
-                    </a>
+                    <div className="logo">
+                        <p className={`logo__title fs-logo ${isMainPage ? 'color-primary' : ''}`}>
+                            <a href="/">Cozy House</a>
+                        </p>
+                        <p className={`logo__subtitle ${isMainPage ? 'color-light-xl' : 'color-dark-3xl'}`}>Shelter for pets in Boston</p>
+                    </div>
                     <div className="menu-icon">
                         <span></span>
                         <span></span>

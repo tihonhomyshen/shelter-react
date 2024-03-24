@@ -23,3 +23,7 @@
     max-width: 340px;
     width: 100%;
 }
+
+.pets-page .logo__title a {
+    color: var(--color-dark-l);
+}

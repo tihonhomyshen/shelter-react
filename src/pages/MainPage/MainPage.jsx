@@ -17,6 +17,8 @@ import donationDog from '../../assets/images/pets/donation-dog.png'
 import creditCard from '../../assets/images/icons/donation/icon-credit-card.svg'
 import { useLocation } from "react-router-dom";
 import StartScreen from "../../components/StartScreen";
+import pets from "../../data/data"
+import Card from "../../components/Card/Card";
 
 
 
@@ -58,7 +60,9 @@ const MainPage = () => {
                                 <img src={leftArrow} alt="left arrow" />
                             </span>
                             <div className="slider__container">
-
+                                {pets.map((pet) => 
+                                    <Card key={pet.id} name={pet.name} src={pet.img} />
+                                )}
                             </div>
                             <span className="right-arrow span-circle active">
                                 <img src={rightArrow} alt="right arrow" />
